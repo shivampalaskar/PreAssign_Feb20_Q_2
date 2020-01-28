@@ -24,8 +24,8 @@ int main(void) {
 	int i=0;
 
 //strcpy
-	stiStrcpy(string2,string1);
-	printf("\nCopied string : %s\n",string2);
+	char *ptr = stiStrcpy(string2,string1);
+	printf("\nCopied string : %s\n",ptr);
 
 //strcmp
 	// For Same String :
