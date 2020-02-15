@@ -21,7 +21,6 @@ int stiStrlen(char*);
 int main(void) {
 	char string1[] = {"Welcome To Sunbeam"}; // to Sunbeam CDAC Diploma Courses
 	char string2[100];
-	int i=0;
 
 //strcpy
 	char *ptr = stiStrcpy(string2,string1);
@@ -60,7 +59,7 @@ int main(void) {
 
 int stiStrcmp(char *string1,char *string2) {
 	int i=0;
-	while (string1[i] != NULL) {
+	while (string1[i] != '\0') {
 		int j = string1[i] - string2[i];
 		if (j != 0)
 			return j;
@@ -108,7 +107,7 @@ char* stiStrrev(char *string){
 
 int stiStrlen(char *string){
 	int i=0;
-	while(string[i]!=NULL)
+	while(string[i]!='\0')
 		i++;
 	return i;
 }
