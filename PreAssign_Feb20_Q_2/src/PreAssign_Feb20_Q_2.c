@@ -53,7 +53,7 @@ int main(void) {
 //strrev
 	stiStrcpy(string1,"ABCDE");
 	printf("\nString : %s",string1);
-	printf("\nAfter reverse : %s",strrev(string1));
+	printf("\nAfter reverse : %s",stiStrrev(string1));
 
 	return EXIT_SUCCESS;
 }
