@@ -16,6 +16,7 @@ int stiStrcmp(char*,char*);
 char*  stiStrcat(char*,char*);
 char* stiStrrev(char*);
 int stiStrlen(char*);
+int my_strcmp(char*, char*);
 
 
 int main(void) {
@@ -110,4 +111,20 @@ int stiStrlen(char *string){
 	while(string[i]!='\0')
 		i++;
 	return i;
+}
+
+int my_strcmp(char *strg1, char *strg2) {
+
+	while ((*strg1 != '\0' && *strg2 != '\0') && *strg1 == *strg2) {
+		strg1++;
+		strg2++;
+	}
+	printf("strg1 : %c strg2 : %c\n",*strg1,*strg2);
+	if (*strg1 == *strg2) {
+		return 0;
+	}
+
+	else {
+		return *strg1 - *strg2;
+	}
 }
